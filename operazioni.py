@@ -12,3 +12,11 @@ def sottrazione(a: float, b: float):
         return a - b
     else:
         return None
+
+def moltiplicazione(a: float, b: float):
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        return a * b
+    else:
+        return None
+
+
