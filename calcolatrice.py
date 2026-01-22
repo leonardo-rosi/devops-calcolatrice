@@ -1,4 +1,4 @@
-from operazioni import somma, sottrazione
+from operazioni import somma, sottrazione, moltiplicazione
 
 # crea una semplice calcolatrice che può sommare e sottrarre due numeri
 def calcolatrice(operazione: str, a: float, b: float):
@@ -13,4 +13,12 @@ def calcolatrice(operazione: str, a: float, b: float):
 if __name__ == "__main__":  
     print("Somma di 3 e 5:", calcolatrice("somma", 3, 5))          # Output: 8
     print("Sottrazione di 10 e 4:", calcolatrice("sottrazione", 10, 4))  # Output: 6
-    print("Operazione non valida:", calcolatrice("moltiplicazione", 2, 3)) # Output: None
+    print("Moltiplicazione di 3 per 2:", calcolatrice("moltiplicazione", 3, 2)) # Output: 6
+    print("Operazione non valida:", calcolatrice("divisione", 10, 2)) # Output: None
+    x = input("Inserisci il primo numero: ")
+    y = input("Inserisci il secondo numero: ")
+    print("Somma di", x, "e", y, ":", calcolatrice("somma", float(x), float(y)))
+    print("Sottrazione di", x, "e", y, ":", calcolatrice("sottrazione", float(x), float(y)))
+    print("Moltiplicazione di", x, "e", y, ":", calcolatrice("moltiplicazione", float(x), float(y)))
+
+    
